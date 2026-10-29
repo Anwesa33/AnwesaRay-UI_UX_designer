@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anwesa Ray · UI/UX Designer</title>
+  <meta name="description"
+    content="Anwesa Ray is a UX Specialist from Kolkata who tells stories and builds systems: UX research, UI design, design systems, hand-drawn illustration and front-end.">
+  <meta property="og:title" content="Anwesa Ray · UI/UX Designer">
+  <meta property="og:description"
+    content="A storyteller and a system thinker. Selected UX/UI work, earlier graphic projects and digital paintings.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3E7FD6">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><rect width='8' height='8' fill='%233E7FD6'/><path d='M1 6V2h1V1h4v1h1v4H5V4H3v2z' fill='%23FFE07A'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@700&family=Silkscreen&family=VT323&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- CRT screen shape (from Figma "Vector 1"), normalised so it scales with the screen -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <clipPath id="crt-mask" clipPathUnits="objectBoundingBox">
+      <path
+        d="M0.0205 0.0125 C0.2545 0 0.7633 0 0.985 0.0175 Q1 0.019 1 0.04 L0.9947 0.972 Q0.9945 1 0.975 1 L0.022 1 Q0 1 0 0.975 L0.0011 0.0657 C0.0013 0.0164 0.0205 0.0125 0.0205 0.0125 Z" />
+    </clipPath>
+  </svg>
+
+  <header class="crt" id="top">
+    <div class="screen" id="screen">
+      <canvas class="sky" id="sky" aria-hidden="true"></canvas>
+      <div class="vignette"></div>
+      <div class="stage" id="stage">
+        <a class="logo" href="#top" aria-label="Anwesa Ray, home"><img src="images/logo.png" alt="" width="165"
+            height="102"></a>
+        <nav aria-label="Main">
+          <ul class="menu">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#earlier">Earlier work</a></li>
+            <li><a href="#paintings">Paintings</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="icon" data-open="#work" style="left:33px;top:214px"
+          aria-label="Works: double-click to jump to my work">
+          <span class="pic"><svg aria-hidden="true" focusable="false" width="108" height="90" viewBox="0 0 108 90"
+              shape-rendering="crispEdges">
+              <rect x="18" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="9" width="9" height="9" fill="#FFE07A" />
+              <rect x="27" y="9" width="9" height="9" fill="#FFE07A" />
+              <rect x="36" y="9" width="9" height="9" fill="#FFE07A" />
+              <rect x="45" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="81" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="90" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="99" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="18" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="18" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="27" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="36" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="45" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="54" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="63" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="72" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="81" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="90" y="18" width="9" height="9" fill="#FFE07A" />
+              <rect x="99" y="18" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="81" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="90" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="99" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="18" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="27" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="36" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="45" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="54" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="63" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="72" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="81" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="90" y="36" width="9" height="9" fill="#FFF1A8" />
+              <rect x="99" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="18" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="27" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="36" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="45" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="54" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="63" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="72" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="81" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="90" y="45" width="9" height="9" fill="#FFF1A8" />
+              <rect x="99" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="18" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="27" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="36" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="45" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="54" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="63" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="72" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="81" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="90" y="54" width="9" height="9" fill="#FFF1A8" />
+              <rect x="99" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="18" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="27" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="36" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="45" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="54" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="63" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="72" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="81" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="90" y="63" width="9" height="9" fill="#FFF1A8" />
+              <rect x="99" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="18" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="27" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="36" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="45" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="54" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="63" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="72" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="81" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="90" y="72" width="9" height="9" fill="#FFF1A8" />
+              <rect x="99" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="81" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="90" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="99" y="81" width="9" height="9" fill="#1D1B1A" />
+            </svg></span><span class="label">Works</span>
+        </button>
+        <button class="icon is-selected" id="icon-paintings" data-open="#pop-paintings" style="left:258px;top:216px"
+          aria-label="Paintings: double-click to open">
+          <span class="pic"><svg aria-hidden="true" focusable="false" width="110" height="100" viewBox="0 0 110 100"
+              shape-rendering="crispEdges">
+              <rect x="80" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="90" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="70" y="10" width="10" height="10" fill="#1D1B1A" />
+              <rect x="80" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="100" y="10" width="10" height="10" fill="#1D1B1A" />
+              <rect x="60" y="20" width="10" height="10" fill="#1D1B1A" />
+              <rect x="70" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="20" width="10" height="10" fill="#1D1B1A" />
+              <rect x="50" y="30" width="10" height="10" fill="#1D1B1A" />
+              <rect x="60" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="30" width="10" height="10" fill="#1D1B1A" />
+              <rect x="40" y="40" width="10" height="10" fill="#1D1B1A" />
+              <rect x="50" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="60" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="40" width="10" height="10" fill="#1D1B1A" />
+              <rect x="30" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="40" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="50" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="60" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="60" width="10" height="10" fill="#1D1B1A" />
+              <rect x="30" y="60" width="10" height="10" fill="#C9B8FF" />
+              <rect x="40" y="60" width="10" height="10" fill="#C9B8FF" />
+              <rect x="50" y="60" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="70" width="10" height="10" fill="#C9B8FF" />
+              <rect x="30" y="70" width="10" height="10" fill="#C9B8FF" />
+              <rect x="40" y="70" width="10" height="10" fill="#C9B8FF" />
+              <rect x="50" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="0" y="80" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="80" width="10" height="10" fill="#C9B8FF" />
+              <rect x="20" y="80" width="10" height="10" fill="#C9B8FF" />
+              <rect x="30" y="80" width="10" height="10" fill="#C9B8FF" />
+              <rect x="40" y="80" width="10" height="10" fill="#1D1B1A" />
+              <rect x="0" y="90" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="90" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="90" width="10" height="10" fill="#1D1B1A" />
+            </svg></span><span class="label">Paintings</span>
+          <span class="tip" aria-hidden="true">double-click to open</span>
+          <span class="cursor" aria-hidden="true"><svg aria-hidden="true" focusable="false" width="32" height="52"
+              viewBox="0 0 32 52" shape-rendering="crispEdges">
+              <rect x="0" y="0" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="4" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="4" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="8" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="8" width="4" height="4" fill="#fff" />
+              <rect x="8" y="8" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="12" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="12" width="4" height="4" fill="#fff" />
+              <rect x="8" y="12" width="4" height="4" fill="#fff" />
+              <rect x="12" y="12" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="16" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="16" width="4" height="4" fill="#fff" />
+              <rect x="8" y="16" width="4" height="4" fill="#fff" />
+              <rect x="12" y="16" width="4" height="4" fill="#fff" />
+              <rect x="16" y="16" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="20" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="20" width="4" height="4" fill="#fff" />
+              <rect x="8" y="20" width="4" height="4" fill="#fff" />
+              <rect x="12" y="20" width="4" height="4" fill="#fff" />
+              <rect x="16" y="20" width="4" height="4" fill="#fff" />
+              <rect x="20" y="20" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="24" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="24" width="4" height="4" fill="#fff" />
+              <rect x="8" y="24" width="4" height="4" fill="#fff" />
+              <rect x="12" y="24" width="4" height="4" fill="#fff" />
+              <rect x="16" y="24" width="4" height="4" fill="#fff" />
+              <rect x="20" y="24" width="4" height="4" fill="#fff" />
+              <rect x="24" y="24" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="28" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="28" width="4" height="4" fill="#fff" />
+              <rect x="8" y="28" width="4" height="4" fill="#fff" />
+              <rect x="12" y="28" width="4" height="4" fill="#fff" />
+              <rect x="16" y="28" width="4" height="4" fill="#fff" />
+              <rect x="20" y="28" width="4" height="4" fill="#fff" />
+              <rect x="24" y="28" width="4" height="4" fill="#fff" />
+              <rect x="28" y="28" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="32" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="32" width="4" height="4" fill="#fff" />
+              <rect x="8" y="32" width="4" height="4" fill="#fff" />
+              <rect x="12" y="32" width="4" height="4" fill="#fff" />
+              <rect x="16" y="32" width="4" height="4" fill="#1D1B1A" />
+              <rect x="20" y="32" width="4" height="4" fill="#1D1B1A" />
+              <rect x="24" y="32" width="4" height="4" fill="#1D1B1A" />
+              <rect x="28" y="32" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="36" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="36" width="4" height="4" fill="#fff" />
+              <rect x="8" y="36" width="4" height="4" fill="#1D1B1A" />
+              <rect x="12" y="36" width="4" height="4" fill="#fff" />
+              <rect x="16" y="36" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="40" width="4" height="4" fill="#1D1B1A" />
+              <rect x="4" y="40" width="4" height="4" fill="#1D1B1A" />
+              <rect x="12" y="40" width="4" height="4" fill="#1D1B1A" />
+              <rect x="16" y="40" width="4" height="4" fill="#fff" />
+              <rect x="20" y="40" width="4" height="4" fill="#1D1B1A" />
+              <rect x="0" y="44" width="4" height="4" fill="#1D1B1A" />
+              <rect x="16" y="44" width="4" height="4" fill="#1D1B1A" />
+              <rect x="20" y="44" width="4" height="4" fill="#fff" />
+              <rect x="24" y="44" width="4" height="4" fill="#1D1B1A" />
+              <rect x="16" y="48" width="4" height="4" fill="#1D1B1A" />
+              <rect x="20" y="48" width="4" height="4" fill="#1D1B1A" />
+            </svg></span>
+        </button>
+        <button class="icon" data-open="#earlier" style="left:33px;top:415px"
+          aria-label="Old graphics: double-click to see earlier graphic work">
+          <span class="pic"><svg aria-hidden="true" focusable="false" width="90" height="72" viewBox="0 0 90 72"
+              shape-rendering="crispEdges">
+              <rect x="27" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="81" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="18" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="18" width="9" height="9" fill="#E4DAFF" />
+              <rect x="27" y="18" width="9" height="9" fill="#E4DAFF" />
+              <rect x="36" y="18" width="9" height="9" fill="#E4DAFF" />
+              <rect x="45" y="18" width="9" height="9" fill="#E4DAFF" />
+              <rect x="54" y="18" width="9" height="9" fill="#E4DAFF" />
+              <rect x="63" y="18" width="9" height="9" fill="#E4DAFF" />
+              <rect x="72" y="18" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="27" width="9" height="9" fill="#E4DAFF" />
+              <rect x="27" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="27" width="9" height="9" fill="#E4DAFF" />
+              <rect x="45" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="27" width="9" height="9" fill="#E4DAFF" />
+              <rect x="63" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="36" width="9" height="9" fill="#E4DAFF" />
+              <rect x="27" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="36" width="9" height="9" fill="#E4DAFF" />
+              <rect x="45" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="36" width="9" height="9" fill="#E4DAFF" />
+              <rect x="63" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="45" width="9" height="9" fill="#E4DAFF" />
+              <rect x="27" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="45" width="9" height="9" fill="#E4DAFF" />
+              <rect x="45" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="45" width="9" height="9" fill="#E4DAFF" />
+              <rect x="63" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="54" width="9" height="9" fill="#E4DAFF" />
+              <rect x="27" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="54" width="9" height="9" fill="#E4DAFF" />
+              <rect x="45" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="54" width="9" height="9" fill="#E4DAFF" />
+              <rect x="63" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="63" width="9" height="9" fill="#1D1B1A" />
+            </svg></span><span class="label">Old graphics</span>
+        </button>
+        <button class="icon label-top" data-open="#pop-anchoring" style="left:33px;top:587px"
+          aria-label="Anchoring: double-click to open">
+          <span class="pic"><svg aria-hidden="true" focusable="false" width="90" height="99" viewBox="0 0 90 99"
+              shape-rendering="crispEdges">
+              <rect x="27" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="0" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="9" width="9" height="9" fill="#A9D8FF" />
+              <rect x="36" y="9" width="9" height="9" fill="#A9D8FF" />
+              <rect x="45" y="9" width="9" height="9" fill="#A9D8FF" />
+              <rect x="54" y="9" width="9" height="9" fill="#A9D8FF" />
+              <rect x="63" y="9" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="18" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="18" width="9" height="9" fill="#A9D8FF" />
+              <rect x="36" y="18" width="9" height="9" fill="#A9D8FF" />
+              <rect x="45" y="18" width="9" height="9" fill="#A9D8FF" />
+              <rect x="54" y="18" width="9" height="9" fill="#A9D8FF" />
+              <rect x="63" y="18" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="27" width="9" height="9" fill="#A9D8FF" />
+              <rect x="36" y="27" width="9" height="9" fill="#A9D8FF" />
+              <rect x="45" y="27" width="9" height="9" fill="#A9D8FF" />
+              <rect x="54" y="27" width="9" height="9" fill="#A9D8FF" />
+              <rect x="63" y="27" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="36" width="9" height="9" fill="#A9D8FF" />
+              <rect x="36" y="36" width="9" height="9" fill="#A9D8FF" />
+              <rect x="45" y="36" width="9" height="9" fill="#A9D8FF" />
+              <rect x="54" y="36" width="9" height="9" fill="#A9D8FF" />
+              <rect x="63" y="36" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="45" width="9" height="9" fill="#A9D8FF" />
+              <rect x="36" y="45" width="9" height="9" fill="#A9D8FF" />
+              <rect x="45" y="45" width="9" height="9" fill="#A9D8FF" />
+              <rect x="54" y="45" width="9" height="9" fill="#A9D8FF" />
+              <rect x="63" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="81" y="45" width="9" height="9" fill="#1D1B1A" />
+              <rect x="0" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="81" y="54" width="9" height="9" fill="#1D1B1A" />
+              <rect x="9" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="72" y="63" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="72" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="81" width="9" height="9" fill="#1D1B1A" />
+              <rect x="18" y="90" width="9" height="9" fill="#1D1B1A" />
+              <rect x="27" y="90" width="9" height="9" fill="#1D1B1A" />
+              <rect x="36" y="90" width="9" height="9" fill="#1D1B1A" />
+              <rect x="45" y="90" width="9" height="9" fill="#1D1B1A" />
+              <rect x="54" y="90" width="9" height="9" fill="#1D1B1A" />
+              <rect x="63" y="90" width="9" height="9" fill="#1D1B1A" />
+            </svg></span><span class="label">Anchoring</span>
+        </button>
+        <button class="icon label-top" data-open="#pop-gullu" style="left:33px;top:787px"
+          aria-label="Gullu: double-click to meet FinEducation's mascot">
+          <span class="pic"><svg aria-hidden="true" focusable="false" width="120" height="80" viewBox="0 0 120 80"
+              shape-rendering="crispEdges">
+              <rect x="20" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="30" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="40" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="50" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="60" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="70" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="80" y="0" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="10" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="30" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="40" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="50" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="60" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="10" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="10" width="10" height="10" fill="#1D1B1A" />
+              <rect x="0" y="20" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="20" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="30" y="20" width="10" height="10" fill="#1D1B1A" />
+              <rect x="40" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="50" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="60" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="20" width="10" height="10" fill="#FFB3C7" />
+              <rect x="100" y="20" width="10" height="10" fill="#1D1B1A" />
+              <rect x="110" y="20" width="10" height="10" fill="#1D1B1A" />
+              <rect x="0" y="30" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="20" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="30" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="40" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="50" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="60" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="30" width="10" height="10" fill="#FFB3C7" />
+              <rect x="100" y="30" width="10" height="10" fill="#B9E6D3" />
+              <rect x="110" y="30" width="10" height="10" fill="#1D1B1A" />
+              <rect x="0" y="40" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="20" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="30" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="40" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="50" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="60" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="40" width="10" height="10" fill="#FFB3C7" />
+              <rect x="100" y="40" width="10" height="10" fill="#B9E6D3" />
+              <rect x="110" y="40" width="10" height="10" fill="#1D1B1A" />
+              <rect x="10" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="30" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="40" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="50" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="60" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="70" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="80" y="50" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="100" y="50" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="60" width="10" height="10" fill="#1D1B1A" />
+              <rect x="30" y="60" width="10" height="10" fill="#FFB3C7" />
+              <rect x="40" y="60" width="10" height="10" fill="#1D1B1A" />
+              <rect x="70" y="60" width="10" height="10" fill="#1D1B1A" />
+              <rect x="80" y="60" width="10" height="10" fill="#FFB3C7" />
+              <rect x="90" y="60" width="10" height="10" fill="#1D1B1A" />
+              <rect x="20" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="30" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="40" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="70" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="80" y="70" width="10" height="10" fill="#1D1B1A" />
+              <rect x="90" y="70" width="10" height="10" fill="#1D1B1A" />
+            </svg></span><span class="label">Gullu</span>
+        </button>
+
+        <h1 class="name" aria-label="Anwesa Ray"><span aria-hidden="true">Anwesa</span><span
+            aria-hidden="true">Ray</span></h1>
+
+        <section class="win paint" id="paint" aria-label="paint.exe: paint some pixels">
+          <div class="grid" id="paint-grid" role="img" aria-label="A 12 by 10 pixel canvas with a pastel heart"></div>
+          <div class="bar plain" data-drag><button type="button" class="close" id="paint-clear"
+              aria-label="Clear canvas" title="clear"></button><b>paint.exe</b></div>
+          <div class="swatches" role="group" aria-label="Colours">
+            <button type="button" style="background:#FFB3C7" data-c="#FFB3C7" aria-label="Pink"
+              aria-pressed="true"></button>
+            <button type="button" style="background:#B9E6D3" data-c="#B9E6D3" aria-label="Mint"
+              aria-pressed="false"></button>
+            <button type="button" style="background:#C9B8FF" data-c="#C9B8FF" aria-label="Lilac"
+              aria-pressed="false"></button>
+            <button type="button" style="background:#FFE07A" data-c="#FFE07A" aria-label="Butter"
+              aria-pressed="false"></button>
+            <button type="button" style="background:#A9D8FF" data-c="#A9D8FF" aria-label="Sky"
+              aria-pressed="false"></button>
+          </div>
+        </section>
+
+        <section class="win hello" aria-label="hello.txt">
+          <div class="bar" data-drag><span class="close" aria-hidden="true"></span><b>hello.txt</b></div>
+          <p class="body">Hi! I’m a UX Specialist who <mark class="m1">tells stories</mark> and <mark class="m2">builds
+              systems</mark>. I also paint portraits and host shows on stage.</p>
+        </section>
+
+        <!-- windows opened by double-clicking icons -->
+        <section class="win popup" id="pop-paintings" style="left:430px;top:150px" aria-label="Paintings" tabindex="-1">
+          <div class="bar" data-drag><button class="close" data-close aria-label="Close"></button><b>paintings/</b>
+          </div>
+          <div class="body">
+            <div class="thumbs"><img src="images/painting-lamp.webp" alt="" loading="lazy"><img
+                src="images/painting-red-scarf.webp" alt="" loading="lazy"><img src="images/painting-dog.webp" alt=""
+                loading="lazy"></div>
+            <p>Portraits and studies I paint off the clock.</p>
+            <a class="btn" href="#paintings" data-close>open the gallery →</a>
+          </div>
+        </section>
+        <section class="win popup" id="pop-anchoring" style="left:210px;top:470px" aria-label="Anchoring" tabindex="-1">
+          <div class="bar" data-drag><button class="close" data-close aria-label="Close"></button><b>anchoring.mov</b>
+          </div>
+          <div class="body">
+            <!-- When the clip is ready: put it in images/anchoring.mp4 and replace the .tape div with:
+               <video src="images/anchoring.mp4" controls playsinline preload="none" poster="images/anchoring-poster.webp"></video> -->
+            <div class="tape">🎤 stage clip loading soon…</div>
+            <p>I host shows for a friend’s music school. Holding a room taught me pacing, which I use in every flow I
+              design.</p>
+          </div>
+        </section>
+        <section class="win popup" id="pop-gullu" style="left:210px;top:560px" aria-label="Gullu" tabindex="-1">
+          <div class="bar" data-drag><button class="close" data-close aria-label="Close"></button><b>gullu.txt</b></div>
+          <div class="body">
+            <p>Hiiyyaaa! I’m Gullu, the hand-drawn Gullak mascot of FinEducation. I show up once a week to celebrate
+              what went right.</p>
+            <a class="btn" href="work/fineducation.html" data-case="fineducation">meet my app →</a>
+          </div>
+        </section>
+      </div>
+      <div class="glass" aria-hidden="true"></div>
+    </div>
+    <div class="chin" aria-hidden="true"><span class="brand">ANWESA·TRON 2026</span><span class="knobs"><i
+          class="led"></i><i class="knob"></i><i class="knob"></i></span></div>
+    <div class="cascade" id="cascade" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="about wrap" id="about" aria-labelledby="about-h">
+      <p class="kicker">About.txt</p>
+      <div class="about-grid">
+        <div>
+          <h2 id="about-h">I always wanted to be a <mark class="h-lilac">storyteller</mark> and a <mark
+              class="h-mint">system thinker</mark>.</h2>
+          <p>I carry both traits into every path of my life. English Literature taught me story, Mass Communication
+            taught me audience, graphic design taught me hierarchy, and UI/UX is where they all meet, across 20+
+            projects so far.</p>
+        </div>
+        <div class="about-wins reveal" id="about-wins">
+          <section class="win w-story" aria-label="storyteller.doc">
+            <div class="bar" data-drag><span class="close" aria-hidden="true"></span><b>storyteller.doc</b></div>
+            <ul class="body">
+              <li>✎ Writes UX copy that sounds human</li>
+              <li>✎ Hosts shows for a music school</li>
+              <li>✎ Paints portraits</li>
+            </ul>
+          </section>
+          <section class="win w-system" aria-label="system-thinker.fig">
+            <div class="bar" data-drag><span class="close" aria-hidden="true"></span><b>system-thinker.fig</b></div>
+            <ul class="body">
+              <li>▦ Builds design systems</li>
+              <li>▦ Ships Figma to HTML/CSS</li>
+              <li>▦ Trains designers &amp; devs</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="dots" aria-hidden="true"><i style="width:18px;height:18px;background:#FFB3C7"></i><i
+          style="width:13px;height:13px;margin-top:3px;background:#C9B8FF"></i><i
+          style="width:8px;height:8px;margin-top:5px;background:#B9E6D3"></i><i
+          style="width:5px;height:5px;margin-top:7px;background:#FFE07A"></i></div>
+      <div class="divider"></div>
+    </section>
+
+    <section class="works wrap" id="work" aria-labelledby="work-h">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Selected work</p>
+          <h2 id="work-h">Things I’ve designed</h2>
+        </div>
+        <p>Research to front-end. For app design I also make <b>hand-drawn illustrations</b>, like Gullu, the mascot in
+          FinEducation.</p>
+      </div>
+      <ol class="rows">
+        <li><a class="row" href="work/fineducation.html" data-case="fineducation">
+            <span class="num">01</span>
+            <div class="t">
+              <h3>FinEducation</h3><span class="tags"><span class="tag">Mobile app</span><span
+                  class="tag">2026</span><span class="tag hl">Illustration</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>Solo product designer · UX research, flows, design system,
+              hand-drawn illustrations<span class="desc">Shame-free money app for people who run a household</span>
+            </div>
+            <div class="thumb" style="background:#C9F0DF">
+              <div class="collage"><img src="images/fe-explainer.webp" alt="" loading="lazy"><img
+                  src="images/fe-goal.webp" alt="" loading="lazy"><img src="images/fe-home.webp" alt=""
+                  loading="lazy"><img src="images/fe-tracker.webp" alt="" loading="lazy"><img
+                  src="images/fe-courses.webp" alt="" loading="lazy"><img src="images/fe-insight.webp" alt=""
+                  loading="lazy"><img src="images/fe-explainer.webp" alt="" loading="lazy"><img
+                  src="images/fe-goal.webp" alt="" loading="lazy"><img src="images/fe-home.webp" alt=""
+                  loading="lazy"><img src="images/fe-tracker.webp" alt="" loading="lazy"><img
+                  src="images/fe-courses.webp" alt="" loading="lazy"><img src="images/fe-insight.webp" alt=""
+                  loading="lazy"></div>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+        <li><a class="row" href="work/medhelper.html" data-case="medhelper">
+            <span class="num">02</span>
+            <div class="t">
+              <h3>MedHelper</h3><span class="tags"><span class="tag">Mobile app</span><span class="tag">UX
+                  research</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>UX designer · research, onboarding wireframes<span
+                class="desc">Helping families keep medicines and medical history in one place</span></div>
+            <div class="thumb" style="background:#D3EBFF"><img src="images/work-medhelper.webp" alt="" loading="lazy"
+                width="300" height="170"></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+        <li><a class="row" href="work/baagwaani.html" data-case="baagwaani">
+            <span class="num">03</span>
+            <div class="t">
+              <h3>Baagwaani</h3><span class="tags"><span class="tag">Web</span><span
+                  class="tag">E-commerce</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>UI/UX designer · IA, UI, component system<span
+                class="desc">A gardening platform that gets people back to third spaces and nature</span></div>
+            <div class="thumb" style="background:#DDEBC8"><img src="images/work-baagwaani.webp" alt="" loading="lazy"
+                width="300" height="170"></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+        <li><a class="row" href="work/radient-dentistry.html" data-case="radient-dentistry">
+            <span class="num">04</span>
+            <div class="t">
+              <h3>Radient Dentistry</h3><span class="tags"><span class="tag">Branding</span><span class="tag">Responsive
+                  web</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>Brand &amp; UI designer · logo, colour system, responsive
+              site<span class="desc">Calm, trustworthy website for a dental clinic</span></div>
+            <div class="thumb" style="background:#E4DAFF"><img src="images/work-radient.webp" alt="" loading="lazy"
+                width="300" height="170"></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+        <li><a class="row" href="work/prime-auto-expo.html" data-case="prime-auto-expo">
+            <span class="num">05</span>
+            <div class="t">
+              <h3>Prime Auto Expo</h3><span class="tags"><span class="tag">Landing page</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>UI designer · landing page, visual design<span
+                class="desc">Landing page for a second-hand bikes &amp; cars marketplace</span></div>
+            <div class="thumb" style="background:#FFDCC7"><img src="images/work-primeauto.webp" alt="" loading="lazy"
+                width="300" height="170"></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+        <li><a class="row" href="work/gandhinagar.html" data-case="gandhinagar">
+            <span class="num">06</span>
+            <div class="t">
+              <h3>Gandhinagar Municipal Corp.</h3><span class="tags"><span class="tag">Civic</span><span
+                  class="tag">Gamification</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>UX/UI designer · concept, gamification, UI<span
+                class="desc">Gamified waste-segregation page for young citizens</span></div>
+            <div class="thumb" style="background:#FFF1A8"><img src="images/work-gandhinagar.webp" alt="" loading="lazy"
+                width="300" height="170"></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+        <li><a class="row" href="work/recycling-solutions.html" data-case="recycling-solutions">
+            <span class="num">07</span>
+            <div class="t">
+              <h3>Recycling Solutions</h3><span class="tags"><span class="tag">Web</span></span>
+            </div>
+            <div class="role"><span class="lbl">MY ROLE</span>UI designer · website design<span
+                class="desc">Scrap-recycling service website</span></div>
+            <div class="thumb" style="background:#FFD6E5"><img src="images/work-recycling.webp" alt="" loading="lazy"
+                width="300" height="170"></div>
+            <span class="arrow" aria-hidden="true">↗</span>
+            <span class="sr-only">Open case study</span>
+          </a></li>
+      </ol>
+    </section>
+
+    <section class="earlier wrap" id="earlier" aria-labelledby="earlier-h">
+      <div class="banner">
+        <div>
+          <p class="arch">ARCHIVE · 2020–21</p>
+          <h2 id="earlier-h">Earlier<br>graphic<br><span>projects</span></h2>
+          <p>Print &amp; advertising<br>for two practice brands</p>
+          <a class="chip" href="https://www.behance.net/anwesaray3" target="_blank" rel="noopener">see all 19 pieces
+            →</a>
+        </div>
+        <div class="tiles">
+          <a href="images/graphic-g-standee.webp" data-lightbox><img src="images/graphic-g-standee.webp"
+              alt="Gharonda standee" loading="lazy" width="232" height="300"></a>
+          <a href="images/graphic-k-standee.webp" data-lightbox><img src="images/graphic-k-standee.webp"
+              alt="Kadam standee" loading="lazy" width="232" height="300"></a>
+          <a href="images/graphic-k-newspaper-ad.webp" data-lightbox><img src="images/graphic-k-newspaper-ad.webp"
+              alt="Kadam newspaper ad" loading="lazy" width="232" height="300"></a>
+          <a href="images/graphic-k-poster.webp" data-lightbox><img src="images/graphic-k-poster.webp"
+              alt="Kadam poster" loading="lazy" width="232" height="300"></a>
+          <a href="images/graphic-g-dangler.webp" data-lightbox><img src="images/graphic-g-dangler.webp"
+              alt="Gharonda dangler" loading="lazy" width="232" height="300"></a>
+          <a href="images/graphic-g-poster.webp" data-lightbox><img src="images/graphic-g-poster.webp"
+              alt="Gharonda poster" loading="lazy" width="232" height="300"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="paintings wrap" id="paintings" aria-labelledby="paint-h">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Off the clock</p>
+          <h2 id="paint-h">Digital paintings</h2>
+        </div>
+        <p>Portraits and studies I paint for myself. Hover to look closer.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <a class="pt" href="images/painting-red-scarf.webp" data-lightbox
+          style="transform-origin:0% 0%;left:2.31%;top:60px;--r:-6deg;--ra:0deg;--grow:2.2;--ar:110/130"><img
+            src="images/painting-red-scarf.webp" alt="Portrait of a woman in a red scarf" loading="lazy"
+            style="width:110px;height:130px"></a>
+        <a class="pt bleed" href="images/painting-lotus.webp" data-lightbox
+          style="transform-origin:50% 50%;left:17.75%;top:250px;--r:5deg;--ra:0deg;--grow:2.2;--ar:120/160"><img
+            src="images/painting-lotus.webp" alt="Pink lotuses among lily pads" loading="lazy"
+            style="width:120px;height:160px"></a>
+        <a class="pt" href="images/painting-mouse.webp" data-lightbox
+          style="transform-origin:50% 0%;left:32.41%;top:40px;--r:4deg;--ra:0deg;--grow:2.0;--ar:175/130"><img
+            src="images/painting-mouse.webp" alt="A tiny mouse on yellow flowers" loading="lazy"
+            style="width:175px;height:130px"></a>
+        <a class="pt" href="images/painting-dog.webp" data-lightbox
+          style="transform-origin:100% 0%;left:71.76%;top:30px;--r:7deg;--ra:0deg;--grow:2.0;--ar:204/130"><img
+            src="images/painting-dog.webp" alt="A dog resting among white flowers" loading="lazy"
+            style="width:204px;height:130px"></a>
+        <a class="pt bleed" href="images/painting-rose.webp" data-lightbox
+          style="transform-origin:100% 100%;left:77.93%;top:270px;--r:-5deg;--ra:0deg;--grow:2.2;--ar:120/160"><img
+            src="images/painting-rose.webp" alt="A red rose in a glass bottle" loading="lazy"
+            style="width:120px;height:160px"></a>
+        <a class="pt bleed" href="images/painting-underwater.webp" data-lightbox
+          style="transform-origin:100% 50%;left:91.05%;top:120px;--r:3deg;--ra:0deg;--grow:2.2;--ar:120/160"><img
+            src="images/painting-underwater.webp" alt="An underwater forest" loading="lazy"
+            style="width:120px;height:160px"></a>
+        <a class="pt is-active" href="images/painting-lamp.webp" data-lightbox
+          style="transform-origin:50% 50%;left:50.23%;top:215px;--r:-2deg;--ra:-2deg;--grow:2.4;--ar:133/138"><img
+            src="images/painting-lamp.webp" alt="Portrait of a woman holding a lamp" loading="lazy"
+            style="width:133px;height:138px"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" id="contact">
+    <p class="hello-big" aria-label="Hello!"><span aria-hidden="true" style="--c:#FFB3C7">H</span><span
+        aria-hidden="true" style="--c:#FFE07A">E</span><span aria-hidden="true" style="--c:#9EE0C3">L</span><span
+        aria-hidden="true" style="--c:#C9B8FF">L</span><span aria-hidden="true" style="--c:#A9D8FF">O</span><span
+        aria-hidden="true" style="--c:#FFC9A8">!</span></p>
+    <p>Have a story that needs a system? Write to me.</p>
+    <a class="mail" href="mailto:anwesaray26@gmail.com" id="mail">anwesaray26@gmail.com</a>
+    <span class="copied" id="copied" aria-live="polite"></span>
+    <nav class="socials" aria-label="Elsewhere">
+      <a href="https://www.linkedin.com/in/anwesa-ray-5983273b6" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/anwesaray3" target="_blank" rel="noopener">Behance</a>
+      <a href="Anwesa-Ray-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </footer>
+
+  <!-- Behance-style case-study overlay: content is fetched from work/*.html when a project is opened -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="scrim" data-close></div>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="Case study" tabindex="-1">
+      <button class="x" data-close aria-label="Close case study">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Painting">
+    <button class="x" data-close aria-label="Close">✕</button>
+    <img alt="">
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

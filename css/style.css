@@ -372,3 +372,20 @@ img.me {
 
 @media (max-width:1100px){.cv{grid-template-columns:1fr}.cv-box:last-child{grid-column:1/-1;border-left:0;border-top:2px solid var(--ink)}}
 @media (max-width:820px){.cv{grid-template-columns:1fr}.cv-box{border-left:0;border-top:2px solid var(--ink)}.cv-box:first-child{border-top:0}.me .photo{height:300px;min-height:0}.tl li{grid-template-columns:96px 1fr;column-gap:12px}}
+/* ---------- always-visible resume download ---------- */
+/* ---------- always-visible resume download ---------- */
+.resume-fab{position:fixed;z-index:150;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));
+  display:inline-flex;align-items:center;gap:10px;padding:10px 18px 10px 14px;background:var(--yellow);color:var(--ink);text-decoration:none;
+  font-family:var(--px);font-size:24px;line-height:24px;border:2px solid var(--ink);border-radius:6px;box-shadow:4px 4px 0 var(--ink);
+  transition:transform .15s,box-shadow .15s}
+.resume-fab:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.resume-fab:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.resume-fab:focus-visible{outline:3px solid #FF5C8A;outline-offset:3px}
+@media (max-width:820px){.resume-fab{right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));font-size:20px;padding:8px 14px 8px 11px}}
+@media print{.resume-fab{display:none}}
+@media (max-width:820px){.resume-fab .fab-more{display:none}}
+/* soft pulse ring: one ripple every 4s, stops on hover, off for reduced motion */
+.resume-fab::after{content:"";position:absolute;inset:-2px;border-radius:8px;border:3px solid #E5765B;opacity:0;pointer-events:none;animation:fab-pulse 2s ease-out 2s infinite}
+.resume-fab:hover::after,.resume-fab:focus-visible::after{animation:none}
+@keyframes fab-pulse{0%{opacity:.9;transform:scale(1)}40%{opacity:0;transform:scale(1.12,1.5)}100%{opacity:0;transform:scale(1.12,1.5)}}
+@media (prefers-reduced-motion:reduce){.resume-fab::after{animation:none}}
